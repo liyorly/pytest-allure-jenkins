@@ -1,0 +1,20 @@
+-
+  name: 我的测试接口01
+  request:
+    url: https://gushitong.baidu.com/opendata
+    method: get
+    headers:
+      Content-Type: application/json
+    params:
+      resource_id: 5352
+      query: 000001
+      code: 000001
+      name: 123456
+      market: ab
+      group: asyn_ranking
+      pn: 0
+      rn: 50
+      pc_web: 1
+      finClientType: pc
+    validate:
+      - eq: {ResultCode: 0}
