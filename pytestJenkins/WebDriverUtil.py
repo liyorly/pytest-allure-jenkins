@@ -11,7 +11,7 @@ class GetWebDriver:
 
     def getChromeWebDriver(self):
         #获取Chrome浏览器的webdriver
-        wd=webdriver.Chrome(service=Service(r'C:\MyProject\PytestJenkins\pytestJenkins'))
-        #print(os.getcwd())
+        wd=webdriver.Chrome(service=Service(r''+os.getcwd()+'\chromedriver'))
+        print('获取webdriver成功，',os.getcwd())
         return wd
 
