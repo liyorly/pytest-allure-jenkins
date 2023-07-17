@@ -1,4 +1,4 @@
-
+import os
 
 from selenium import webdriver
 
@@ -11,6 +11,7 @@ class GetWebDriver:
 
     def getChromeWebDriver(self):
         #获取Chrome浏览器的webdriver
-        wd=webdriver.Chrome(service=Service(r'C:\webdriver\chromedriver\chromedriver'))
+        wd=webdriver.Chrome(service=Service(r'C:\MyProject\PytestJenkins\pytestJenkins'))
+        #print(os.getcwd())
         return wd
 
